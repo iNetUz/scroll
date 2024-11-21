@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300vh;
+  background: #333;
+}
+.box{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 450px;
+  padding: 0 0 25px;
+}
+.box span{
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  font-size: 1.5em;
+  transition: 0.25s;
+}
+.box span.active{
+  color: #0f0;
+  -webkit-text-stroke: 0.5px #fff0;
+  text-shadow: 0 0 10px #0f0,
+  0 0 30px #0f0,
+  0 0 60px #0f0;
+}
